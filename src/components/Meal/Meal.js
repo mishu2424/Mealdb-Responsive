@@ -2,7 +2,8 @@ import { Button } from 'react-bootstrap';
 import React from 'react';
 import { Card, Col, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-
+import Rating from 'react-rating';
+import './Meal.css'
 const Meal = (props) => {
    const {idMeal}=props.meal;
     return (
@@ -23,7 +24,11 @@ const Meal = (props) => {
           <Button  variant="primary">Details</Button>
           </Link>
         </Card.Body>
-        
+        <Rating className="ms-3" 
+           emptySymbol="far fa-star design"
+           fullSymbol="fas fa-star design"            
+           initialRating={3}/>
+
       </Card>
     </Col>
         </>

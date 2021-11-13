@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import { useParams } from 'react-router';
 import Detail from '../Detail/Detail';
 
-const Mealdetails = (props) => {
+const Mealdetails = () => {
     const {mealId}=useParams();
     const [details,setDetails]=useState([])
     useEffect(()=>{
